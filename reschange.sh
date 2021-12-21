@@ -9,7 +9,7 @@ RESOLUTION=$(xrandr | grep \* | awk '{print $1}')
     ;;
 
   1720x1440)
-    xrandr --output HDMI-A-0 --mode 3440x1440 --rate 60
+    xrandr --output HDMI-A-0 --mode 3440x1440 --rate 100
     ;;
 
 esac
