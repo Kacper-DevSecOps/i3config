@@ -49,9 +49,6 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty
 
-# start a file explorer 
-bindsym $mod+Shift+Return exec pcmanfm
-
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -156,7 +153,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit' -B 'Reboot' 'reboot' -B 'Shutdown' 'shutdown now'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit Dbraveshortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 
 #Own Bindings 
@@ -177,8 +174,7 @@ for_window [class="Mailspring"] move to workspace $ws9
 assign [class="spotify"] $ws10
 for_window [class="Spotify"] move to workspace $ws10
 
-#DISGAEA I3WM ARCH STEAM FIX
-for_window [class="steam_app_405900"] floating enable
+
 for_window [all] title_window_icon on
 for_window [all] title_window_icon padding 10px
 
